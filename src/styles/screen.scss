@@ -1,0 +1,194 @@
+/* EXTERNAL DEPENDENCIES */
+
+@import "vendor/normalize";
+@import "vendor/modular-scale";
+
+/* CONFIG AND OVERRIDES */
+@import "config";
+
+@import "shims";
+
+@import "utils/mixins";
+@import "utils/placeholders";
+
+@import "common/forms";
+@import "common/buttons";
+/*doc
+---
+title: Sample Docs
+name: example
+category: basics
+---
+```html_example
+    <div class='example'>Amazing Style Guide coming soon...</div>
+```
+*/
+html,body{
+    height: 100%;
+}
+body{
+//     background: #091630; /* Old browsers */
+//     background: -moz-linear-gradient(top, #091630 1%, #2989d8 20%, #ffffff 65%, #ffffff 100%); /* FF3.6-15 */
+//     background: -webkit-linear-gradient(top, #091630 1%,#2989d8 20%,#ffffff 65%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+//     background: linear-gradient(to bottom, #091630 1%,#2989d8 20%,#ffffff 65%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+//     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#091630', endColorstr='#ffffff',GradientType=0 );
+    font-family: $base-font;
+    font-size: 15px;
+    margin: 0px;
+    color: #fff;
+    background: $bg-color;
+}
+a,a:hover,a:visited,a:active{
+    color: $white;
+    border-color: $white;
+    text-decoration: none;
+}
+.container-fluid{
+    padding:0;
+}
+.row {
+    margin-top: 20px;
+}
+.text-center{
+    text-align: center;
+}
+.middle{
+    float: none !important;
+    @include make-xs-column(12);
+    @include make-sm-column(10);
+    @include make-lg-column(8);
+    margin: 0 auto;
+    background:$bg-color;
+}
+.bold-font{
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+#header{
+    margin-top: 35px;
+    height: 57px;
+    #title{
+        @extend .bold-font;
+        float: right;
+        font-size: 17px;
+        margin-top: 17px;
+    }
+}
+h1,h2,h3{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+h1 {
+    font-size: 80px;
+    letter-spacing: 15px;
+    margin: 10px 0;
+}
+h2{
+    font-size: 26px;
+    letter-spacing: 3px;
+}
+h3 {
+    letter-spacing: 3px;
+    font-size: 14px;
+    span{
+        text-transform: lowercase;
+        font-family: $support-font;
+    }
+}
+.textcontent {
+    @extend .text-center;
+    font-size: 22px;
+    p{
+        width: 80%;
+        margin: 20px auto;
+    }
+}
+.breakout {
+    width: 100%;
+    background: $white;
+    margin-top: 20px;
+    hr{
+        width:50px;
+    }
+    .middle{
+        background: $white;
+        color: $black;
+    }
+}
+
+.blurb {
+    @extend .text-center;
+    p{
+        width:60%;
+        font-size: 19px;
+        margin: 0 auto;
+    }
+}
+.imageExpand{
+    position: relative;
+    display: table;
+    margin: 0 auto;
+    img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+        
+    }
+}
+
+.slider{
+    position:relative;
+}
+.slider-left, .slider-right{
+    width: 50px;
+    height: 100%;
+    background: #fff;
+    position:absolute;
+    top: 0px;
+}
+.slider-right{
+    right: 0px;
+}
+.slider-left{
+    left: 0px;
+}
+.icon {
+    &.logo{
+        &:before{
+            content: 'D';
+            width: 100%;
+            text-align: center;
+            display:inline-block;
+            margin: 0 auto;
+            margin-top: 17px;
+            font-weight: 700;
+        }
+        float: left;
+        display: block;
+        width: 56px;
+        height: 56px;
+        background: $light-gray;
+    }
+    &.close{
+    }
+    &.right-arrow{
+    }
+    &.left-arrow{
+    }
+    &.zoom{
+        width: 30px;
+        height: 30px;
+        border: solid 1px $white;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        &:before{
+            content:'+';
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+

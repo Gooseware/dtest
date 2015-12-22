@@ -1,0 +1,30 @@
+/*
+ *  BUTTONS
+ *
+ */
+
+
+/* BEGIN STYLES */
+
+button,
+.btn {
+  @include inline-block;
+  // Skinny top and bottoms but wider buttons, relative to font size
+  padding: 19px 52px !important;
+  font-size: 17px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  padding: $input-padding;
+  text-transform: uppercase;
+  border: 1px solid $white;
+  border-radius: $border-radius;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover{
+      background: $white;
+      color: $black;
+  }
+}
+
+

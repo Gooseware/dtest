@@ -1,0 +1,115 @@
+
+/* TYPOGRAPHY */
+$base-font: 'Lato', Helvetica, Arial, sans-serif;
+$support-font: 'Italianno', Serif; // Often a serif
+$monospace-font: 'Source Code Pro', monospace;
+
+$base-font-size: 1em; // Equals 100%, 1rem, or roughly 16px
+$base-line-height: 1.5;
+$rhythm-unit: $base-line-height / 2; // Makes math a lot easier
+
+// Use modular-scale to get our scaling
+$base-ratio: $major-third; // Major third, 1.25
+
+$show-guide: false; // Show a baseline guide
+$guide-color: #f1e8fd;
+
+/* COLORS */
+
+// Generic Grays/Whites/Darks
+$black: #1a1a1a;
+$dark-gray: #444;
+$gray: #999;
+$light-gray: #2e2e2e;
+$whitesmoke: #fdfdfd;
+$white: #fff;
+
+// Primary palette colors
+// Blues, reds, greens, etc.
+
+// Application of palette
+$bg-color: $black;
+$text-color: $white;
+$brand-color: $whitesmoke;
+$brand-color-alt: $white;
+
+$highlight-color: $gray;
+$error-color: darken(red, 15%);
+
+/* FORM CONFIGS */
+$input-padding: .5em 1em;
+
+/* GLOBAL STYLES */
+$border-radius: 0px;
+
+
+/*
+  **********************
+  IGNORE BELOW THIS LINE
+
+  The following section just passing various from
+  this file to various dependencies.
+  **********************
+*/
+
+// Pass typography variables to modular-scale
+$ms-base: $base-font-size;
+$ms-ratio: $base-ratio;
+
+
+/*!
+ * Bootstrap v3.3.5 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/blob/master/LICENSE)
+ */
+
+// Core variables and mixins
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+
+// Reset and dependencies
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/print";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/glyphicons";
+
+// Core CSS
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/type";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/code";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/tables";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/forms";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
+
+// Components
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/component-animations";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/dropdowns";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/button-groups";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/input-groups";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/navs";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/navbar";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/breadcrumbs";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/pagination";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/pager";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/labels";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/badges";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/jumbotron";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/thumbnails";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/alerts";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/progress-bars";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/media";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/list-group";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/panels";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-embed";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/wells";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/close";
+
+// Components w/ JavaScript
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/modals";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/tooltip";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/popovers";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/carousel";
+
+// Utility classes
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";

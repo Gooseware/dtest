@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Deloitte Frontend Example</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700|Italianno:400" rel="stylesheet" type="text/css">
+
+</head>
+<!-- 
+  I haven't had the time to create a proper template for this project which includes a reset for all of the css, to save time I 
+  made a copy of my most recent project and removed all of the content. I did this to take advantage of using a yeoman scaffold I already have some familiarty with.
+-->
+<body class="container-fluid">
+    <div class="row middle">
+      <div id="header" class="row">
+        <div class="icon logo"></div>
+        <div id="title" class="bold-font" role="heading" aria-level="1">PROJECT NAME</div>
+      </div>
+
+<!--
+  Creating an image slider:
+    1) Find the sliders and iterate through their image data
+    2) Keeping the current 
+-->
+<div class="row slider" data-images='[{"src":"assets/img/image.gif","alt":"image"},{"src":"assets/img/image.gif","alt":"another image thats grey with the word image in it"},{"src":"assets/img/image.gif","alt":"A quick description for the last image"}]'>
+      </div>
+      <div class="row textcontent">
+        <!-- I am using a div with class heading because somewhere in my included css there is an h1 already defined -->
+        <h1 role="heading" aria-level="3">Project Name</h1>
+        <h3>Service offering <span>for</span> client name</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit purus elit. Quisque tincidunt porta porttitor. Etiam mollis maximus magna sed efficitur. Duis consequat, magna quis auctor sollicitudin, lacus neque porta lectus, et laoreet ligula libero vel lectus. Fusce quam ante, congue vitae dapibus vel, pharetra ac lectus. Aenean at mauris leo. Sed at gravida justo. Sed aliquam enim lectus, id egestas neque accumsan non. Vestibulum nec dolor leo.</p>
+        <a href="#" class="btn">visit site</a>
+      </div>
+      <!-- With all of the images in the site i would put them into -->
+      <div class="row heroImage">
+        <img src="assets/img/image.gif" alt="Image" class="img-responsive" />
+      </div>
+      <div class="row blurb">
+        <h2>Blurb</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit purus elit. Quisque tincidunt porta porttitor. Etiam mollis maximus magna sed efficitur.</p>
+      </div>
+    </div>
+    <div class="breakout">
+      <div class="row middle">
+        <div class="breakout-content">
+          <h2>Breakout area</h2>
+          <hr align="left" />
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit purus elit. Quisque tincidunt porta porttitor. Etiam mollis maximus magna sed efficitur.</p>
+        </div>
+        <div class="breakout-image">&nbsp;</div>
+      </div>
+    </div>
+    <div class="row middle">
+    </div>
+  <script>__REACT_DEVTOOLS_GLOBAL_HOOK__ = parent.__REACT_DEVTOOLS_GLOBAL_HOOK__</script>
+  <script type="text/javascript" src="assets/app.js"></script>
+</body>
+</html>
